@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root{
+    --cor0: #FFFFFF;
+    --cor1: #1F72A6;
+    --cor2: #023E73;
+    --cor3: #023859;
+    --cor4: linear-gradient(180deg, rgba(2, 56, 89, 0.6) 0%, #023E73 100%);
+    --cor5: #191919;
+
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /*box-sizing: border-box;*/
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #191919; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1F72A6;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #023859; 
+  }
+
+
+body{
+    background-color:var(--cor5);
+    color:var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.471);
+    font-weight: normal;
+}
+
+header > p{
+    color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.471);
+    margin-bottom: 20px;
+}
+
+nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.226);
+    
+}
+nav > a{
+    color: rgb(194, 233, 255);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
+    transition-duration: .5s;
+    
+}
+nav > a:hover{
+    background-color: var(--cor0);
+    color:var(--cor2);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor3);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.412);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main  h1{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+}
+
+main  h2{
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1em;
+    line-height: 2em;
+
+}
+main strong{
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(194, 233, 255);
+    background-color: var(--cor1);
+    padding: 2px 6px;  
+    border-radius: 3px; 
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+main  img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+main  img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video{
+    background-color: var(--cor1);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.345);
+}
+
+ul{
+    list-style-position: inside;
+    columns: 1;
+    margin-bottom: 10px;
+    list-style-type: circle;
+}
+li{
+    margin-top: 10px;
+}
+
+aside > h3{
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a{
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 13;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+.conteudo1{
+    background-color: #023E73;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.345);
+}
+
+/*
+popup
+*/
+
+#popuser{
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--cor2);
+    color: white;
+}
+#popuser:hover{
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+.redes{
+      text-decoration: none;
+      font-weight: bolder;
+      padding: 5px;
+      margin-top: 10px;
+     
+}
+
+dialog::backdrop{
+        background-color: rgba(7, 7, 7, 0.848);
+        
+}
+      
+dialog{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem black;
+    margin: auto;
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.345); 
+    color: white;     
+}
+
+dialog > h2{
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+dialog > p{
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 2em;
+
+}
+
+dialog a:link{
+    text-decoration: none;
+    color:white
+    
+}
+dialog a:hover{
+    text-decoration: underline;
+    color: white;
+    
+}
+dialog a:visited {
+    color: var(--cor3);
+}
+
+dialog > #fechar{
+    margin-left: 10px;
+}
+      
+#botao{
+    background-color: #83bf85;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#botao:hover {
+    background-color: #588e5a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#fechar{
+    background-color: #83bf85;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
